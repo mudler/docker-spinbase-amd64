@@ -1,4 +1,4 @@
-FROM sabayon/base-amd64:latest
+FROM sabayon/base-amd64
 
 MAINTAINER mudler <mudler@sabayonlinux.org>
 
