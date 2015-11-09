@@ -1,8 +1,4 @@
-# Sabayon Spinbase: a Docker Project #
-
-Attention! It's under strong development
-
-State: Alpha
+# Sabayon Spinbase Docker image #
 
 The purpose of this project is to provide an image of Sabayon spinbase.
 It is just a [Sabayon 
