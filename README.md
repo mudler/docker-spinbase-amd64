@@ -1,10 +1,7 @@
-# Sabayon Spinbase Docker image #
+# Sabayon Spinbase Docker image 
 
 The purpose of this project is to provide an image of Sabayon spinbase.
-It is just a [Sabayon 
-base](https://github.com/mudler/docker-sabayon-base) 
-with upgrades 
-and tools, ready to be shipped on VM(s)/LiveCDs
+It is just a [Sabayon base](https://github.com/mudler/docker-sabayon-base) with upgrades and tools, ready to be shipped on VM(s)/LiveCDs
 
 Images are also on Docker Hub [sabayon/spinbase-amd64](https://registry.hub.docker.com/u/sabayon/spinbase-amd64/) and the already squashed image, 
 [sabayon/spinbase-amd64-squashed](https://registry.hub.docker.com/u/sabayon/spinbase-amd64-squashed/)
