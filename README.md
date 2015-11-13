@@ -1,5 +1,7 @@
 # Sabayon Spinbase Docker image 
 
+[![Circle CI](https://circleci.com/gh/Sabayon/docker-spinbase-amd64.svg?style=svg)](https://circleci.com/gh/Sabayon/docker-spinbase-amd64)
+
 The purpose of this project is to provide an image of Sabayon spinbase.
 It is just a [Sabayon base](https://github.com/mudler/docker-sabayon-base) with upgrades and tools, ready to be shipped on VM(s)/LiveCDs
 
