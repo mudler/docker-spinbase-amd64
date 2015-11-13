@@ -89,10 +89,6 @@ rm -rf /etc/ssh/*_key*
 # TODO: check if the issue persists with systemd 202.
 echo FONT=LatArCyrHeb-16 > /etc/vconsole.conf
 
-# Regenerating locales
-
-locale-gen
-
 # Triggering systemd-update-done
 touch /etc/.updated
 touch /var/.updated
