@@ -6,7 +6,6 @@ dependencies:
   override:
     - docker info
     - docker build -t sabayon/spinbase-amd64 .
-    - docker export $(docker run -i -t sabayon/spinbase-amd64 true && docker ps -aq | xargs echo | cut -d ' ' -f 1) | docker import - sabayon/spinbase-amd64-squashed
     - docker export $(docker run -i -t sabayon/spinbase-amd64 true && docker ps -aq | xargs echo | cut -d ' ' -f 1) | docker import - sabayon/spinbase-amd64
 test:
   override:
@@ -18,4 +17,3 @@ deployment:
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push sabayon/spinbase-amd64
-      - docker push sabayon/spinbase-amd64-squashed
