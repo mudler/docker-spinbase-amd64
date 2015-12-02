@@ -38,6 +38,9 @@ equo up
 #equo i $(cat /etc/sabayon-pkglist | xargs echo)
 equo i "${PACKAGES_TO_ADD[@]}"
 
+# Configuring sudo for the sabayon default user
+[ -e /etc/sudoers ] && echo "$DEFAULT_USER ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
 #small cleanup
 #equo rm --nodeps gnome-base/gsettings-desktop-schemas sys-libs/db:4.8
 
