@@ -10,6 +10,8 @@ FILES_TO_REMOVE=(
 
 PACKAGES_TO_ADD=(
     "app-eselect/eselect-bzimage"
+    "app-editors/nano"
+    "sys-process/procps"
     "app-text/pastebunz"
     "app-admin/perl-cleaner"
     "sys-apps/grep"
