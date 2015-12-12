@@ -4,8 +4,6 @@ MAINTAINER mudler <mudler@sabayonlinux.org>
 
 # Set locales to en_US.UTF-8
 ENV LC_ALL=en_US.UTF-8
-# Setting default user for sudo configuration
-ENV DEFAULT_USER=sabayon
 
 # Accepting licenses needed to continue automatic install/upgrade
 ADD ./conf/spinbase-licenses /etc/entropy/packages/license.accept
