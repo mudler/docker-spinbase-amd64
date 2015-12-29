@@ -30,6 +30,7 @@ PACKAGES_TO_ADD=(
     "x11-themes/sabayon-artwork-isolinux"
     "app-crypt/shim-signed"
     "dev-perl/Module-Build"
+    "net-misc/networkmanager"
 )
 
 # Handling install/removal of packages specified in env
