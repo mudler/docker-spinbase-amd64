@@ -33,6 +33,11 @@ PACKAGES_TO_ADD=(
     "net-misc/networkmanager"
 )
 
+# Make sure we have /boot/grub before installing
+# sabayon-artwork-grub (so that it's able to copy
+# the splash over to the correct location)
+mkdir -p /boot/grub
+
 # Handling install/removal of packages specified in env
 
 equo repo mirrorsort sabayonlinux.org
@@ -103,8 +108,8 @@ touch /var/.updated
 rm -f /etc/openldap/ssl/ldap.pem /etc/openldap/ssl/ldap.key \
 /etc/openldap/ssl/ldap.csr /etc/openldap/ssl/ldap.crt
 
-# Remove scripts
-rm -rf /post-upgrade.sh
-
 # Cleanup
 rm -rf "${FILES_TO_REMOVE[@]}"
+
+# Remove scripts
+rm -f /post-upgrade.sh
