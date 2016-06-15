@@ -31,6 +31,7 @@ PACKAGES_TO_ADD=(
     "app-crypt/shim-signed"
     "dev-perl/Module-Build"
     "net-misc/networkmanager"
+    "sys-auth/nss-mdns"
 )
 
 # Make sure we have /boot/grub before installing
