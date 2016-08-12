@@ -6,8 +6,6 @@ FILES_TO_REMOVE=(
    "/.zcompdump"
    "/var/log/emerge.log"
    "/var/log/emerge-fetch.log"
-   "/etc/env.d/02locale"
-   "/etc/locale.conf"
 )
 
 PACKAGES_TO_ADD=(
