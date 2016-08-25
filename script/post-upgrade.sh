@@ -47,7 +47,6 @@ equo i "${PACKAGES_TO_ADD[@]}"
 
 #small cleanup
 #equo rm --nodeps gnome-base/gsettings-desktop-schemas sys-libs/db:4.8
-equo rm --deep dev-python/numpy
 
 # Cleaning accepted licenses
 rm -rf /etc/entropy/packages/license.accept
