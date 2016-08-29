@@ -98,6 +98,8 @@ for slink in $(find /lib/modules/ -type l); do
     fi
 done
 
+systemctl enable systemd-timesyncd
+
 # Setting bzimage
 eselect bzimage set 1
 
