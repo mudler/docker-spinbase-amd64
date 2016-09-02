@@ -32,6 +32,8 @@ PACKAGES_TO_ADD=(
     "sys-auth/nss-mdns"
 )
 
+equo security oscheck || exit 1
+
 # Make sure we have /boot/grub before installing
 # sabayon-artwork-grub (so that it's able to copy
 # the splash over to the correct location)
@@ -137,3 +139,5 @@ rm -rf "${FILES_TO_REMOVE[@]}"
 
 # Remove scripts
 rm -f /post-upgrade.sh
+
+equo security oscheck --assimilate
