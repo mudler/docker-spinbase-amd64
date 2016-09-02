@@ -140,4 +140,4 @@ rm -rf "${FILES_TO_REMOVE[@]}"
 # Remove scripts
 rm -f /post-upgrade.sh
 
-equo security oscheck --assimilate
+equo security oscheck --assimilate || exit 0
