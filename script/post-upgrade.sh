@@ -42,6 +42,7 @@ mkdir -p /boot/grub
 # Handling install/removal of packages specified in env
 
 equo repo mirrorsort sabayonlinux.org
+cp -rfv /etc/entropy/repositories.conf.d/_entropy_sabayon-limbo.example /etc/entropy/repositories.conf.d/entropy_sabayon-limbo
 equo up
 
 #equo i $(cat /etc/sabayon-pkglist | xargs echo)
